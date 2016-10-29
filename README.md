@@ -45,7 +45,7 @@ Add to Watch | Ctrl + F5
 
 ## Shortcuts not included
 
-Some shortcuts are not included because Visual Studio Code don't implement the feature yet. You may find other extensions in the Marketplace that implements some of them:
+Some shortcuts are not included because Visual Studio Code doesn't implement the feature yet. You may find other extensions in the Marketplace that implements some of them:
 
 * [Numbered Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks)
 * [Change Case](https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case)
