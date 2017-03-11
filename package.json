@@ -2,7 +2,7 @@
     "name": "delphi-keybindings",
     "displayName": "Delphi Keymap",
     "description": "Popular Delphi keybindings for Visual Studio Code",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "alefragnani",
     "galleryBanner": {
         "color": "#476e83",
@@ -304,6 +304,34 @@
                 "linux": "ctrl+shift+f4",
                 "key": "ctrl+shift+f4",
                 "command": "workbench.action.closeOtherEditors"
+            },
+            {
+                "mac": "cmd+shift+s",
+                "win": "ctrl+shift+s",
+                "linux": "ctrl+shift+s",
+                "key": "ctrl+shift+s",
+                "command": "workbench.action.files.saveAll"
+            },
+            {
+                "mac": "cmd+shift+enter",
+                "win": "ctrl+shift+enter",
+                "linux": "ctrl+shift+enter",
+                "key": "ctrl+shift+enter",
+                "command": "editor.action.referenceSearch.trigger"
+            },
+            {
+                "mac": "cmd+g",
+                "win": "ctrl+g",
+                "linux": "ctrl+g",
+                "key": "ctrl+g",
+                "command": "editor.action.goToDeclaration"
+            },
+            {
+                "mac": "cmd+shift+h",
+                "win": "ctrl+shift+h",
+                "linux": "ctrl+shift+h",
+                "key": "ctrl+shift+h",
+                "command": "editor.action.showHover"
             }
         ]
     },
