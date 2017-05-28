@@ -2,7 +2,7 @@
     "name": "delphi-keybindings",
     "displayName": "Delphi Keymap",
     "description": "Popular Delphi keybindings for Visual Studio Code",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "publisher": "alefragnani",
     "galleryBanner": {
         "color": "#476e83",
@@ -209,6 +209,22 @@
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
+                "mac": "cmd+shift+y",
+                "win": "ctrl+shift+y",
+                "linux": "ctrl+shift+y",
+                "key": "ctrl+shift+y",
+                "command": "deleteAllRight",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "mac": "cmd+t",
+                "win": "ctrl+t",
+                "linux": "ctrl+t",
+                "key": "ctrl+t",
+                "command": "deleteWordEndRight",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
                 "mac": "cmd+shift+i",
                 "win": "ctrl+shift+i",
                 "linux": "ctrl+shift+i",
@@ -332,6 +348,20 @@
                 "linux": "ctrl+shift+h",
                 "key": "ctrl+shift+h",
                 "command": "editor.action.showHover"
+            },
+            {
+                "mac": "cmd+k n",
+                "win": "ctrl+k n",
+                "linux": "ctrl+k n",
+                "key": "ctrl+k n",
+                "command": "editor.action.transformToUppercase"
+            },
+            {
+                "mac": "cmd+k o",
+                "win": "ctrl+k o",
+                "linux": "ctrl+k o",
+                "key": "ctrl+k o",
+                "command": "editor.action.transformToLowercase"
             }
         ]
     },

@@ -22,9 +22,13 @@ Refactor / Rename | Ctrl + Shift + E
 Comment Line | Ctrl + ;
 Redo | Alt + Shift + Backspace
 Delete Line | Ctrl + Y
+Deletes a Word to the Right  | Ctrl + T
+Deletes to the End of a Line | Ctrl + Shift + Y
 Indent | Ctrl + Shift + I
 Show Snippets | Ctrl + J
 Help Insight | Ctrl + Shift + H
+Transform Selection to Lowercase | Ctrl + Shift + O
+Transform Selection to Uppercase | Ctrl + Shift + N
 
 ### Navigation
 

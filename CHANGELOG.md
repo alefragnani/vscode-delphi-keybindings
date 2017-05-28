@@ -1,3 +1,7 @@
+## Version 0.3.0
+
+* More shortcuts added
+
 ## Version 0.2.0
 
 * More shortcuts added
