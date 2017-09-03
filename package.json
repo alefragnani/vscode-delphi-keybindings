@@ -2,7 +2,7 @@
     "name": "delphi-keybindings",
     "displayName": "Delphi Keymap",
     "description": "Popular Delphi keybindings for Visual Studio Code",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "publisher": "alefragnani",
     "galleryBanner": {
         "color": "#476e83",
@@ -19,7 +19,7 @@
         "keymap",
         "delphi"
     ],
-    "icon": "images/icon.svg",
+    "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
     "homepage": "https://github.com/alefragnani/vscode-delphi-keybindings/blob/master/README.md",
     "repository": {
