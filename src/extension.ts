@@ -4,7 +4,6 @@
 import * as vscode from 'vscode';
 var open = require('open');
 
-
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -28,12 +27,10 @@ export function activate(context: vscode.ExtensionContext) {
         }
     }
 
-
-
-    let disposableHelp = vscode.commands.registerCommand('delphiKeybindings.selectWord', () => {
+    let disposableSelectWord = vscode.commands.registerCommand('delphiKeybindings.selectWord', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
-          vscode.window.showInformationMessage("Open a file first to copy text");
+          vscode.window.showInformationMessage("Open a file first to select word");
           return;
         }
         const selection = editor.selection;
@@ -42,11 +39,14 @@ export function activate(context: vscode.ExtensionContext) {
         }
 
     });
+    context.subscriptions.push(disposableSelectWord);
 
-    context.subscriptions.push(disposableHelp);
-
-    let disposableSelectWord = vscode.commands.registerCommand('delphiKeybindings.help', () => {
+    let disposableHelp = vscode.commands.registerCommand('delphiKeybindings.help', () => {
         const editor = vscode.window.activeTextEditor;
+        if (!editor) {
+            vscode.window.showInformationMessage("Open a file first to locate help in DocWiki");
+            return;
+          }
         const selection = editor.selection;
         if (selection.isEmpty) {
             selectWord(editor);
@@ -56,9 +56,7 @@ export function activate(context: vscode.ExtensionContext) {
         
         open(baseUrl);
     });
-
-    context.subscriptions.push(disposableSelectWord);
-
+    context.subscriptions.push(disposableHelp);
 }
 
 // this method is called when your extension is deactivated
