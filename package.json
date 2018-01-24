@@ -9,7 +9,7 @@
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.6.0"
+        "vscode": "^1.19.0"
     },
     "categories": [
         "Keymaps"
@@ -19,6 +19,11 @@
         "keymap",
         "delphi"
     ],
+    "activationEvents": [
+        "onCommand:delphiKeybindings.help",
+        "onCommand:delphiKeybindings.selectWord"
+    ],
+    "main": "./out/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
     "homepage": "https://github.com/alefragnani/vscode-delphi-keybindings/blob/master/README.md",
@@ -30,6 +35,13 @@
         "url": "https://github.com/alefragnani/vscode-delphi-keybindings/issues"
 	},
     "contributes": {
+        "commands": [{
+            "command": "delphiKeybindings.help",
+            "title": "Delphi: DocWiki Help"
+        },{
+            "command": "delphiKeybindings.selectWord",
+            "title": "Delphi: Select Word"
+        }],
         "keybindings": [
             {
                 "mac": "f9",
@@ -362,13 +374,34 @@
                 "linux": "ctrl+k o",
                 "key": "ctrl+k o",
                 "command": "editor.action.transformToLowercase"
+            },
+            {
+                "key": "f1",
+                "command": "delphiKeybindings.help"
+            },
+            {
+                "mac": "cmd+w",
+                "win": "ctrl+w",
+                "linux": "ctrl+w",
+                "key": "ctrl+w",
+                "command": "delphiKeybindings.selectWord"
             }
         ]
     },
     "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install"
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "open": "^0.0.5"
     },
     "devDependencies": {
-        "vscode": "^0.11.0"
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
     }
 }
