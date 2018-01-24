@@ -33,15 +33,18 @@
     },
     "bugs": {
         "url": "https://github.com/alefragnani/vscode-delphi-keybindings/issues"
-	},
+    },
     "contributes": {
-        "commands": [{
-            "command": "delphiKeybindings.help",
-            "title": "Delphi: DocWiki Help"
-        },{
-            "command": "delphiKeybindings.selectWord",
-            "title": "Delphi: Select Word"
-        }],
+        "commands": [
+            {
+                "command": "delphiKeybindings.help",
+                "title": "Delphi: DocWiki Help"
+            },
+            {
+                "command": "delphiKeybindings.selectWord",
+                "title": "Delphi: Select Word"
+            }
+        ],
         "keybindings": [
             {
                 "mac": "f9",
@@ -122,8 +125,6 @@
                 "key": "ctrl+f9",
                 "command": "workbench.action.tasks.build"
             },
-
-
             {
                 "mac": "cmd+d",
                 "win": "ctrl+d",
@@ -178,7 +179,6 @@
                 "command": "editor.action.commentLine",
                 "when": "editorTextFocus && !editorReadonly"
             },
-
             {
                 "mac": "cmd+p",
                 "win": "ctrl+p",
@@ -186,7 +186,6 @@
                 "key": "ctrl+p",
                 "command": "workbench.action.quickOpen"
             },
-
             {
                 "mac": "alt+f7",
                 "win": "alt+f7",
@@ -203,7 +202,6 @@
                 "command": "editor.action.marker.next",
                 "when": "editorFocus && !editorReadonly"
             },
-
             {
                 "mac": "alt+shift+backspace",
                 "win": "alt+shift+backspace",
@@ -244,7 +242,6 @@
                 "command": "editor.action.indentLines",
                 "when": "editorTextFocus && !editorReadonly"
             },
-
             {
                 "mac": "alt+shift+down",
                 "win": "alt+shift+down",
@@ -317,7 +314,6 @@
                 "command": "cursorWordStartLeft",
                 "when": "editorTextFocus"
             },
-
             {
                 "mac": "cmd+n",
                 "win": "ctrl+n",
