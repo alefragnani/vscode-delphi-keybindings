@@ -27,8 +27,10 @@ Deletes to the End of a Line | Ctrl + Shift + Y
 Indent | Ctrl + Shift + I
 Show Snippets | Ctrl + J
 Help Insight | Ctrl + Shift + H
+Help | F1
 Transform Selection to Lowercase | Ctrl + Shift + O
 Transform Selection to Uppercase | Ctrl + Shift + N
+Select Word | Ctrl + W
 
 ### Navigation
 
@@ -65,7 +67,7 @@ Some shortcuts are not included because Visual Studio Code doesn't implement the
 
 ## Reference
 
-The oficial reference is located at [Default Keyboard Shortcuts](http://docwiki.embarcadero.com/RADStudio/Seattle/en/Default_Keyboard_Shortcuts)
+The oficial reference is located at [Default Keyboard Shortcuts](http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Default_Keyboard_Shortcuts)
 
 ## Participate
 
@@ -77,4 +79,6 @@ If you miss any keyboard shortcut, feel free to create issues and pull requests
 
 ---
 
-[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) a :coffee: if you enjoy using this extension :thumbsup:
+[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) a :coffee: and you will help me to keep working on this extension :wink:
+
+[![Paypal Donations](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) um :coffee: e você vai me ajudar a continuar trabalhando nesta extensão :wink:
