@@ -1,15 +1,19 @@
-## Version 0.4.0
+## [0.5.0] - 2018-01-25
+### Added
+* New Tokyo shortcuts
 
-* **Internal:** Marketplace's icon has been updated
+## [0.4.0] - 2017-09-03
+### Changed
+* Marketplace's icon
 
-## Version 0.3.0
+## [0.3.0] - 2017-05-28
+### Added
+* More shortcuts
 
-* More shortcuts added
+## [0.2.0] - 2017-05-11
+### Added
+* More shortcuts
 
-## Version 0.2.0
-
-* More shortcuts added
-
-## Version 0.1.0
+## [0.1.0] - 2016-10-29
 
 * Initial release
