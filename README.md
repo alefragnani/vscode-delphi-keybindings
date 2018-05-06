@@ -23,9 +23,9 @@ Help | F1 | | Evaluate/Modify | Ctrl + F7
 
 If you are looking for the same **Bookmarks** experience from **Delphi**, try out my [Numbered Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks) extension :wink: 
 
-## Support Delphi Keybindings
+## Support Delphi Keymap
 
- While **Delphi Keybindings** is free and OpenSource, if you find it useful, please consider supporting it.
+ While **Delphi Keymap** is free and OpenSource, if you find it useful, please consider supporting it.
 
 I've been working on this on my spare time, and although I enjoy giving away my free time and attention to it, I'd like to do more.
 
