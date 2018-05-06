@@ -130,8 +130,8 @@
                 "win": "ctrl+d",
                 "linux": "ctrl+d",
                 "key": "ctrl+d",
-                "command": "editor.action.format",
-                "when": "editorHasFormattingProvider && editorTextFocus && !editorReadonly"
+                "command": "editor.action.formatDocument",
+                "when": "editorTextFocus && !editorReadonly"
             },
             {
                 "mac": "cmd+h",
