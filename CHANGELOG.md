@@ -1,3 +1,10 @@
+## [6.0.0] - 2018-05-06
+### Changed
+* New publishing/versioning model
+
+### Fixed
+* `Format Document` keybinding was not working (issue [#1](https://github.com/alefragnani/vscode-delphi-keybindings/issues/1))
+
 ## [0.5.0] - 2018-01-25
 ### Added
 * New Tokyo shortcuts
