@@ -40,15 +40,15 @@
         "commands": [
             {
                 "command": "delphiKeybindings.help",
-                "title": "Delphi: DocWiki Help"
+                "title": "Delphi Keymap: DocWiki Help"
             },
             {
                 "command": "delphiKeybindings.selectWord",
-                "title": "Delphi: Select Word"
+                "title": "Delphi Keymap: Select Word"
             },
             {
                 "command": "delphiKeybindings.whatsNew",
-                "title": "Delphi Keybindings: What's New"
+                "title": "Delphi Keymap: What's New"
             }
         ],
         "keybindings": [
