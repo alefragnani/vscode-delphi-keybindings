@@ -1,9 +1,9 @@
 <p align="center">
   <br />
-  <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="70%" /></a>
+  <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="60%" /></a>
 </p>
 
-# What's new in Delphi Keymap 6
+# What's new in Delphi Keymap 7
 
 * Adds **Tokyo** keybindings
 * Fixes `Format Document` command
