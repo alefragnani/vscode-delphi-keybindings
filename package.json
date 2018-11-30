@@ -21,9 +21,11 @@
     ],
     "activationEvents": [
         "onCommand:delphiKeybindings.help",
-        "onCommand:delphiKeybindings.selectWord"
+        "onCommand:delphiKeybindings.selectWord",
+        "onCommand:delphiKeybindings.whatsNew",
+        "*"
     ],
-    "main": "./out/extension",
+    "main": "./out/src/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
     "homepage": "https://github.com/alefragnani/vscode-delphi-keybindings/blob/master/README.md",
@@ -43,6 +45,10 @@
             {
                 "command": "delphiKeybindings.selectWord",
                 "title": "Delphi: Select Word"
+            },
+            {
+                "command": "delphiKeybindings.whatsNew",
+                "title": "Delphi Keybindings: What's New"
             }
         ],
         "keybindings": [
