@@ -2,14 +2,14 @@
     "name": "delphi-keybindings",
     "displayName": "Delphi Keymap",
     "description": "Popular Delphi keybindings for Visual Studio Code",
-    "version": "6.1.0",
+    "version": "7.0.0",
     "publisher": "alefragnani",
     "galleryBanner": {
         "color": "#476e83",
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": "^1.23.0"
     },
     "categories": [
         "Keymaps"
@@ -21,9 +21,11 @@
     ],
     "activationEvents": [
         "onCommand:delphiKeybindings.help",
-        "onCommand:delphiKeybindings.selectWord"
+        "onCommand:delphiKeybindings.selectWord",
+        "onCommand:delphiKeybindings.whatsNew",
+        "*"
     ],
-    "main": "./out/extension",
+    "main": "./out/src/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
     "homepage": "https://github.com/alefragnani/vscode-delphi-keybindings/blob/master/README.md",
@@ -38,11 +40,15 @@
         "commands": [
             {
                 "command": "delphiKeybindings.help",
-                "title": "Delphi: DocWiki Help"
+                "title": "Delphi Keymap: DocWiki Help"
             },
             {
                 "command": "delphiKeybindings.selectWord",
-                "title": "Delphi: Select Word"
+                "title": "Delphi Keymap: Select Word"
+            },
+            {
+                "command": "delphiKeybindings.whatsNew",
+                "title": "Delphi Keymap: What's New"
             }
         ],
         "keybindings": [
@@ -395,8 +401,8 @@
         "open": "^0.0.5"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
+        "typescript": "^3.1.6",
+        "vscode": "^1.1.21",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     }

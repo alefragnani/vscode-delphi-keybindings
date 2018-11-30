@@ -1,6 +1,36 @@
-# Delphi Keymap for Visual Studio Code
+<p align="center">
+  <br />
+  <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="60%" /></a>
+</p>
+
+# What's new in Delphi Keymap 7
+
+* Adds **Tokyo** keybindings
+* Fixes `Format Document` command
+
+# Support
+
+**Delphi Keymap** is an open source extension created for **Visual Studio Code**. While being free and open source, if you find it useful, please consider supporting it.
+
+<table align="center" width="60%" border="0">
+  <tr>
+    <td>
+      <a title="Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"/></a>
+    </td>
+    <td>
+      <a title="Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif"/></a>
+    </td>
+    <td>
+      <a title="Patreon" href="https://www.patreon.com/alefragnani"><img src="https://raw.githubusercontent.com/alefragnani/oss-resources/master/images/button-become-a-patron-rounded-small.png"/></a>
+    </td>
+  </tr>
+</table>
+
+# Delphi Keymap
 
 This extension ports popular **Delphi** keyboard shortcuts to **Visual Studio Code**.
+
+# Features
 
 ## Shortcuts included
 
@@ -22,28 +52,6 @@ Help | F1 | | Evaluate/Modify | Ctrl + F7
 ## Bookmarks
 
 If you are looking for the same **Bookmarks** experience from **Delphi**, try out my [Numbered Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks) extension :wink: 
-
-## Support Delphi Keymap
-
-While **Delphi Keymap** is free and OpenSource, if you find it useful, please consider supporting it.
-
-I've been working on this on my spare time, and although I enjoy giving away my free time and attention to it, I'd like to do more.
-
-<table align="center" width="60%" border="0">
-  <tr>
-    <td>
-      <a title="Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"/></a>
-    </td>
-    <td>
-      <a title="Paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=BR&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif"/></a>
-    </td>
-    <td>
-      <a title="Patreon" href="https://www.patreon.com/alefragnani"><img src="https://raw.githubusercontent.com/alefragnani/oss-resources/master/images/button-become-a-patron-rounded-small.png"/></a>
-    </td>
-  </tr>
-</table>
-
----
 
 ## License
 
