@@ -1,3 +1,7 @@
+## [7.1.0] - 2019-01-18
+### Changed
+* Replace NPM package based on security alerts (open -> opn)
+
 ## [7.0.0] - 2018-11-30
 ### Added
 * What's New
