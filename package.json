@@ -402,7 +402,7 @@
     },
     "devDependencies": {
         "typescript": "^3.1.6",
-        "vscode": "^1.1.21",
+        "vscode": "^1.1.22",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     }
