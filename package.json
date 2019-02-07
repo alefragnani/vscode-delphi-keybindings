@@ -2,14 +2,14 @@
     "name": "delphi-keybindings",
     "displayName": "Delphi Keymap",
     "description": "Popular Delphi keybindings for Visual Studio Code",
-    "version": "7.0.0",
+    "version": "8.0.0",
     "publisher": "alefragnani",
     "galleryBanner": {
         "color": "#476e83",
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.23.0"
+        "vscode": "^1.31.0"
     },
     "categories": [
         "Keymaps"
@@ -397,12 +397,9 @@
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
-    "dependencies": {
-        "open": "^0.0.5"
-    },
     "devDependencies": {
         "typescript": "^3.1.6",
-        "vscode": "^1.1.21",
+        "vscode": "^1.1.28",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     }

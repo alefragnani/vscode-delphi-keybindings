@@ -1,3 +1,7 @@
+## [8.0.0] - 2019-02-07
+### Internal
+* Use new VS Code API - Open Resource in Browser (issue [#3](https://github.com/alefragnani/vscode-delphi-keybindings/issues/3))
+
 ## [7.0.0] - 2018-11-30
 ### Added
 * What's New
