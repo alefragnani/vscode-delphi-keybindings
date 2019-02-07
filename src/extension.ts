@@ -7,7 +7,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-var open = require('open');
 
 import { WhatsNewDelphiKeybindingsContentProvider } from "./whats-new/DelphiKeybindingsContentProvider";
 import { WhatsNewManager } from "../vscode-whats-new/src/Manager";
@@ -68,7 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
         let baseUrl: string = "http://docwiki.embarcadero.com/RADStudio/Tokyo/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
         baseUrl = baseUrl.replace("%%SEARCH%%", editor.document.getText(editor.selection))
         
-        open(baseUrl);
+        vscode.env.openExternal(vscode.Uri.parse(baseUrl));
     });
     context.subscriptions.push(disposableHelp);
 }
