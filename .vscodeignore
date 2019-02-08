@@ -3,3 +3,6 @@
 **/*.map
 .gitignore
 tsconfig.json
+out/**
+webpack.config.js
+package-json.lock
