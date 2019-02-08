@@ -140,10 +140,10 @@
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
-                "mac": "cmd+h",
-                "win": "ctrl+h",
-                "linux": "ctrl+h",
-                "key": "ctrl+h",
+                "mac": "cmd+r",
+                "win": "ctrl+r",
+                "linux": "ctrl+r",
+                "key": "ctrl+r",
                 "command": "editor.action.startFindReplaceAction",
                 "when": "editorTextFocus && !editorReadonly"
             },
