@@ -25,7 +25,7 @@
         "onCommand:delphiKeybindings.whatsNew",
         "*"
     ],
-    "main": "./out/src/extension",
+    "main": "./dist/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
     "homepage": "https://github.com/alefragnani/vscode-delphi-keybindings/blob/master/README.md",
@@ -391,16 +391,18 @@
         ]
     },
     "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "vscode:prepublish": "webpack --mode production",
+        "webpack": "webpack --mode development",
+        "webpack-dev": "webpack --mode development --watch",
+        "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
         "typescript": "^3.1.6",
         "vscode": "^1.1.28",
         "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "@types/mocha": "^2.2.42",
+        "webpack": "^4.19.1",
+        "webpack-cli": "^3.1.0",
+        "ts-loader": "^4.4.2"
     }
 }
