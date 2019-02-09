@@ -7,6 +7,7 @@
 
 * Adds **Tokyo** keybindings
 * Fixes `Format Document` command
+* Fixes `Replace` command
 
 # Support
 

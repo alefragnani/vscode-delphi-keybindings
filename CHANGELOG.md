@@ -1,6 +1,10 @@
-## [8.0.0] - 2019-02-07
+## [8.0.0] - 2019-02-08
+### Fixed
+* Replace command should be `Ctrl + R` (issue [#2](https://github.com/alefragnani/vscode-delphi-keybindings/issues/2))
+
 ### Internal
 * Use new VS Code API - Open Resource in Browser (issue [#3](https://github.com/alefragnani/vscode-delphi-keybindings/issues/3))
+* Use WebPack for publishing (issue [#4](https://github.com/alefragnani/vscode-delphi-keybindings/issues/4))
 
 ## [7.0.0] - 2018-11-30
 ### Added
