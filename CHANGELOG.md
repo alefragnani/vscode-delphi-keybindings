@@ -1,4 +1,8 @@
-## [8.0.0] - 2019-02-08
+## [8.0.1] - 2019-02-09
+### Internal
+* Remove `package-lock.json` from published extension
+
+## [8.0.0] - 2019-02-09
 ### Fixed
 * Replace command should be `Ctrl + R` (issue [#2](https://github.com/alefragnani/vscode-delphi-keybindings/issues/2))
 
