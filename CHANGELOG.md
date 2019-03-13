@@ -1,3 +1,7 @@
+## [8.0.2] - 2019-03-13
+### Fixed
+- What's New page broken in VS Code 1.32 due to CSS API changes
+
 ## [8.0.1] - 2019-02-09
 ### Internal
 * Remove `package-lock.json` from published extension
