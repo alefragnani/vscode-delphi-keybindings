@@ -1,8 +1,12 @@
 .vscode/**
+typings/**
+issues/**
 **/*.ts
 **/*.map
+out/**
+node_modules/**
 .gitignore
 tsconfig.json
-out/**
-webpack.config.js
+npm-debug.log
 package-lock.json
+webpack.config.js
