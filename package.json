@@ -2,14 +2,14 @@
     "name": "delphi-keybindings",
     "displayName": "Delphi Keymap",
     "description": "Popular Delphi keybindings for Visual Studio Code",
-    "version": "8.0.1",
+    "version": "8.0.2",
     "publisher": "alefragnani",
     "galleryBanner": {
         "color": "#476e83",
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.31.0"
+        "vscode": "^1.32.0"
     },
     "categories": [
         "Keymaps"
@@ -391,18 +391,22 @@
         ]
     },
     "scripts": {
+        "build": "webpack --mode development",
+        "watch": "webpack --watch --mode development --info-verbosity verbose",
         "vscode:prepublish": "webpack --mode production",
         "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
+        "compile": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
         "typescript": "^3.1.6",
         "vscode": "^1.1.28",
-        "@types/node": "^7.0.43",
+        "@types/node": "^6.0.40",
         "@types/mocha": "^2.2.42",
         "webpack": "^4.19.1",
         "webpack-cli": "^3.1.0",
-        "ts-loader": "^4.4.2"
+        "ts-loader": "^4.4.2",
+        "terser-webpack-plugin": "^1.2.1"
     }
 }
