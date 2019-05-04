@@ -16,6 +16,10 @@ export class WhatsNewDelphiKeybindingsContentProvider implements ContentProvider
 
     provideChangeLog(): ChangeLogItem[] {
         let changeLog: ChangeLogItem[] = [];
+        changeLog.push({kind: ChangeLogKind.NEW, message: `<b>Remote Development</b> support (Thanks to 
+            @mjbvz - <a title=\"Open PR #6\" 
+            href=\"https://github.com/alefragnani/vscode-delphi-keybindings/pull/6\">
+            PR #6</a>)`});
         changeLog.push({kind: ChangeLogKind.NEW, message: "<b>Tokyo</b> shortcuts"});
         changeLog.push({kind: ChangeLogKind.FIXED, message: `<b>Replace</b> command has wrong keybinding - 
             <a title=\"Issue #2\" href=\"https://github.com/alefragnani/vscode-delphi-keybindings/issues/2\">

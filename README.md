@@ -5,6 +5,7 @@
 
 # What's new in Delphi Keymap 8
 
+* Adds **Remote Development** support
 * Adds **Tokyo** keybindings
 * Fixes `Format Document` command
 * Fixes `Replace` command
