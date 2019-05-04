@@ -25,6 +25,7 @@
         "onCommand:delphiKeybindings.whatsNew",
         "*"
     ],
+    "extensionKind": "ui",
     "main": "./dist/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
