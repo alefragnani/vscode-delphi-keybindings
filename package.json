@@ -399,6 +399,9 @@
         "webpack-dev": "webpack --mode development --watch",
         "compile": "tsc -watch -p ./"
     },
+    "dependencies": {
+        "vscode-ext-selection": "1.0.1"
+    },
     "devDependencies": {
         "@types/mocha": "^2.2.42",
         "@types/node": "^10.14.17",
