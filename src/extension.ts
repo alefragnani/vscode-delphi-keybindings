@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (selection.isEmpty) {
             selectWordAtCursorPosition(editor);
         }
-        let baseUrl: string = "http://docwiki.embarcadero.com/RADStudio/Tokyo/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
+        let baseUrl: string = "http://docwiki.embarcadero.com/RADStudio/Rio/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
         baseUrl = baseUrl.replace("%%SEARCH%%", editor.document.getText(editor.selection))
         
         vscode.env.openExternal(vscode.Uri.parse(baseUrl));
