@@ -8,6 +8,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
+import { selectWordAtCursorPosition } from "vscode-ext-selection";
 import { WhatsNewDelphiKeybindingsContentProvider } from "./whats-new/DelphiKeybindingsContentProvider";
 import { WhatsNewManager } from "../vscode-whats-new/src/Manager";
 
@@ -21,25 +22,6 @@ export function activate(context: vscode.ExtensionContext) {
     viewer.showPageInActivation();
     context.subscriptions.push(vscode.commands.registerCommand('delphiKeybindings.whatsNew', () => viewer.showPage()))
 
-    function selectWord(editor: vscode.TextEditor): boolean {
-        const selection = editor.selection;
-        const doc = editor.document;
-        if (selection.isEmpty) {
-            const cursorWordRange = doc.getWordRangeAtPosition(selection.active);
-            
-            if (cursorWordRange) {
-                let newSe = new vscode.Selection(cursorWordRange.start.line, cursorWordRange.start.character, cursorWordRange.end.line, cursorWordRange.end.character);
-                editor.selection = newSe;
-                return true;
-                
-            } else {
-                return false;
-            }
-        } else {
-            return true;
-        }
-    }
-
     let disposableSelectWord = vscode.commands.registerCommand('delphiKeybindings.selectWord', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
@@ -48,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
         const selection = editor.selection;
         if (selection.isEmpty) {
-            selectWord(editor);
+            selectWordAtCursorPosition(editor);
         }
 
     });
@@ -62,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
           }
         const selection = editor.selection;
         if (selection.isEmpty) {
-            selectWord(editor);
+            selectWordAtCursorPosition(editor);
         }
         let baseUrl: string = "http://docwiki.embarcadero.com/RADStudio/Tokyo/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
         baseUrl = baseUrl.replace("%%SEARCH%%", editor.document.getText(editor.selection))
