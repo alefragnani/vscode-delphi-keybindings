@@ -9,7 +9,7 @@
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.32.0"
+        "vscode": "^1.41.0"
     },
     "categories": [
         "Keymaps"
@@ -397,16 +397,15 @@
         "vscode:prepublish": "webpack --mode production",
         "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install"
+        "compile": "tsc -watch -p ./"
     },
     "devDependencies": {
         "@types/mocha": "^2.2.42",
-        "@types/node": "^6.0.40",
+        "@types/node": "^10.14.17",
+        "@types/vscode": "^1.41.0",
         "terser-webpack-plugin": "^1.2.1",
         "ts-loader": "^4.4.2",
-        "typescript": "^3.1.6",
-        "vscode": "^1.1.33",
+        "typescript": "^3.5.1",
         "webpack": "^4.19.1",
         "webpack-cli": "^3.1.0"
     }
