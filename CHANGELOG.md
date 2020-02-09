@@ -1,3 +1,13 @@
+## [9.0.0] - 2020-02-08
+### Changed
+- DocWiki command now uses Rio URL (issue [#9](https://github.com/alefragnani/vscode-delphi-keybindings/issues/9))
+
+**Remote Development** support (Thanks to @mjbvz [PR #6](https://github.com/alefragnani/vscode-delphi-keybindings/pull/6))
+
+### Internal
+- Use vscode-ext-selection NPM Package
+- Support VS Code package split
+
 ## [8.1.0] - 2019-05-04
 ### Added
 - **Remote Development** support (Thanks to @mjbvz [PR #6](https://github.com/alefragnani/vscode-delphi-keybindings/pull/6))

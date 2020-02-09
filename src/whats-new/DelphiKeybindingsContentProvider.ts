@@ -21,9 +21,12 @@ export class WhatsNewDelphiKeybindingsContentProvider implements ContentProvider
             href=\"https://github.com/alefragnani/vscode-delphi-keybindings/pull/6\">
             PR #6</a>)`});
         changeLog.push({kind: ChangeLogKind.NEW, message: "<b>Tokyo</b> shortcuts"});
+        changeLog.push({kind: ChangeLogKind.CHANGED, message: `<b>DocWiki</b> command now uses Rio URL - 
+            <a title=\"Issue #9\" href=\"https://github.com/alefragnani/vscode-delphi-keybindings/issues/9\">
+            Issue #9</a>`});
         changeLog.push({kind: ChangeLogKind.FIXED, message: `<b>Replace</b> command has wrong keybinding - 
             <a title=\"Issue #2\" href=\"https://github.com/alefragnani/vscode-delphi-keybindings/issues/2\">
-            Issue #s</a>`});
+            Issue #2</a>`});
         changeLog.push({kind: ChangeLogKind.FIXED, message: `<b>Format Document</b> command was not working - 
             <a title=\"Issue #1\" href=\"https://github.com/alefragnani/vscode-delphi-keybindings/issues/1\">
             Issue #1</a>`});
