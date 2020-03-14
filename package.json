@@ -403,7 +403,6 @@
         "vscode-ext-selection": "1.0.1"
     },
     "devDependencies": {
-        "@types/mocha": "^2.2.42",
         "@types/node": "^10.14.17",
         "@types/vscode": "^1.41.0",
         "terser-webpack-plugin": "^1.2.1",
