@@ -25,7 +25,9 @@
         "onCommand:delphiKeybindings.whatsNew",
         "*"
     ],
-    "extensionKind": "ui",
+    "extensionKind": [
+        "ui"
+    ],
     "main": "./dist/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
@@ -391,13 +393,19 @@
             }
         ]
     },
+    "eslintConfig": {
+        "extends": [
+            "vscode-ext"
+        ]
+    },
     "scripts": {
         "build": "webpack --mode development",
         "watch": "webpack --watch --mode development --info-verbosity verbose",
         "vscode:prepublish": "webpack --mode production",
         "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
-        "compile": "tsc -watch -p ./"
+        "compile": "tsc -watch -p ./",
+        "lint": "eslint -c package.json --ext .ts src vscode-whats-new"
     },
     "dependencies": {
         "vscode-ext-selection": "1.0.1"
@@ -405,6 +413,10 @@
     "devDependencies": {
         "@types/node": "^10.14.17",
         "@types/vscode": "^1.41.0",
+        "@typescript-eslint/eslint-plugin": "^3.8.0",
+        "@typescript-eslint/parser": "^3.8.0",
+        "eslint": "^7.6.0",
+        "eslint-config-vscode-ext": "^1.0.0",
         "terser-webpack-plugin": "^1.2.1",
         "ts-loader": "^4.4.2",
         "typescript": "^3.5.1",
