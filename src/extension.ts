@@ -9,18 +9,16 @@
 import * as vscode from 'vscode';
 
 import { selectWordAtCursorPosition } from "vscode-ext-selection";
-import { WhatsNewDelphiKeybindingsContentProvider } from "./whats-new/DelphiKeybindingsContentProvider";
-import { WhatsNewManager } from "../vscode-whats-new/src/Manager";
-
+import { registerWhatsNew } from "./whats-new/commands";
+import { Container } from './container';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-    const provider = new WhatsNewDelphiKeybindingsContentProvider();
-    const viewer = new WhatsNewManager(context).registerContentProvider("delphi-keybindings", provider);
-    viewer.showPageInActivation();
-    context.subscriptions.push(vscode.commands.registerCommand('delphiKeybindings.whatsNew', () => viewer.showPage()))
+    Container.context = context;
+
+    registerWhatsNew();
 
     const disposableSelectWord = vscode.commands.registerCommand('delphiKeybindings.selectWord', () => {
         const editor = vscode.window.activeTextEditor;
