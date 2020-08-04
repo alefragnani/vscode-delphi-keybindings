@@ -3,7 +3,7 @@
   <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="60%" /></a>
 </p>
 
-# What's new in Delphi Keymap 9
+# What's new in Delphi Keymap 9.1
 
 * Adds **Remote Development** support
 * Adds **Tokyo** keybindings
