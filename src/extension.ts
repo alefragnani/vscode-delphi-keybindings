@@ -17,12 +17,12 @@ import { WhatsNewManager } from "../vscode-whats-new/src/Manager";
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-    let provider = new WhatsNewDelphiKeybindingsContentProvider();
-    let viewer = new WhatsNewManager(context).registerContentProvider("delphi-keybindings", provider);
+    const provider = new WhatsNewDelphiKeybindingsContentProvider();
+    const viewer = new WhatsNewManager(context).registerContentProvider("delphi-keybindings", provider);
     viewer.showPageInActivation();
     context.subscriptions.push(vscode.commands.registerCommand('delphiKeybindings.whatsNew', () => viewer.showPage()))
 
-    let disposableSelectWord = vscode.commands.registerCommand('delphiKeybindings.selectWord', () => {
+    const disposableSelectWord = vscode.commands.registerCommand('delphiKeybindings.selectWord', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
           vscode.window.showInformationMessage("Open a file first to select word");
@@ -36,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
     context.subscriptions.push(disposableSelectWord);
 
-    let disposableHelp = vscode.commands.registerCommand('delphiKeybindings.help', () => {
+    const disposableHelp = vscode.commands.registerCommand('delphiKeybindings.help', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage("Open a file first to locate help in DocWiki");
@@ -46,14 +46,10 @@ export function activate(context: vscode.ExtensionContext) {
         if (selection.isEmpty) {
             selectWordAtCursorPosition(editor);
         }
-        let baseUrl: string = "http://docwiki.embarcadero.com/RADStudio/Rio/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
+        let baseUrl = "http://docwiki.embarcadero.com/RADStudio/Rio/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
         baseUrl = baseUrl.replace("%%SEARCH%%", editor.document.getText(editor.selection))
         
         vscode.env.openExternal(vscode.Uri.parse(baseUrl));
     });
     context.subscriptions.push(disposableHelp);
-}
-
-// this method is called when your extension is deactivated
-export function deactivate() {
 }
