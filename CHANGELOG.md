@@ -1,3 +1,7 @@
+## [9.2.0] - 2020-09-18
+### Added
+- **Codespaces** support (issue [#16](https://github.com/alefragnani/vscode-delphi-keybindings/issues/16))
+
 ## [9.1.0] - 2020-08-03
 ### Internal
 - Migrate from TSLint to ESLint (issue [#13](https://github.com/alefragnani/vscode-delphi-keybindings/issues/13))

@@ -17,6 +17,16 @@ export class WhatsNewDelphiKeybindingsContentProvider implements ContentProvider
     provideChangeLog(): ChangeLogItem[] {
         const changeLog: ChangeLogItem[] = [];
 
+        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.2.0", releaseDate: "September 2020" } });
+        changeLog.push({
+            kind: ChangeLogKind.NEW,
+            detail: {
+                message: "<b>Codespaces</b> Support",
+                id: 16,
+                kind: IssueKind.Issue
+            }
+        });
+
         changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.1.0", releaseDate: "July 2020" } });
         changeLog.push({
             kind: ChangeLogKind.INTERNAL,
