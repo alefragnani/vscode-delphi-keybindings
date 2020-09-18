@@ -1,3 +1,9 @@
+## [9.1.0] - 2020-08-03
+### Internal
+- Migrate from TSLint to ESLint (issue [#13](https://github.com/alefragnani/vscode-delphi-keybindings/issues/13))
+- Security Alert: elliptic (dependabot [PR #14](https://github.com/alefragnani/vscode-delphi-keybindings/pull/14))
+- Security Alert: acorn (dependabot [PR #11](https://github.com/alefragnani/vscode-delphi-keybindings/pull/11))
+
 ## [9.0.0] - 2020-02-08
 ### Changed
 - DocWiki command now uses Rio URL (issue [#9](https://github.com/alefragnani/vscode-delphi-keybindings/issues/9))
