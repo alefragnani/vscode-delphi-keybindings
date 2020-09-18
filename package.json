@@ -26,7 +26,8 @@
         "*"
     ],
     "extensionKind": [
-        "ui"
+        "ui",
+        "workspace"
     ],
     "main": "./dist/extension",
     "icon": "images/icon.png",
