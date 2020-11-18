@@ -1,3 +1,7 @@
+## [9.2.1] - 2020-11-17
+### Fixed
+- Word navigation (issue [#17](https://github.com/alefragnani/vscode-delphi-keybindings/issues/17))
+
 ## [9.2.0] - 2020-09-18
 ### Added
 - **Codespaces** support (issue [#16](https://github.com/alefragnani/vscode-delphi-keybindings/issues/16))
