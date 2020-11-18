@@ -313,7 +313,7 @@
                 "win": "ctrl+right",
                 "linux": "ctrl+right",
                 "key": "ctrl+right",
-                "command": "cursorWordStartRight",
+                "command": "cursorWordRight",
                 "when": "editorTextFocus"
             },
             {
@@ -321,7 +321,7 @@
                 "win": "ctrl+left",
                 "linux": "ctrl+left",
                 "key": "ctrl+left",
-                "command": "cursorWordStartLeft",
+                "command": "cursorWordLeft",
                 "when": "editorTextFocus"
             },
             {
