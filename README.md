@@ -1,3 +1,8 @@
+[![](https://vsmarketplacebadge.apphb.com/version-short/alefragnani.delphi-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=alefragnani.delphi-keybindings)
+[![](https://vsmarketplacebadge.apphb.com/downloads-short/alefragnani.delphi-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=alefragnani.delphi-keybindings)
+[![](https://vsmarketplacebadge.apphb.com/rating-short/alefragnani.delphi-keybindings.svg)](https://marketplace.visualstudio.com/items?itemName=alefragnani.delphi-keybindings)
+[![](https://img.shields.io/github/workflow/status/alefragnani/vscode-delphi-keybindings/CI)](https://github.com/alefragnani/vscode-delphi-keybindings/actions?query=workflow%3ACI)
+
 <p align="center">
   <br />
   <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="60%" /></a>
