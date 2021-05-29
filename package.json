@@ -29,6 +29,12 @@
         "ui",
         "workspace"
     ],
+    "capabilities": {
+        "virtualWorkspaces": true,
+        "untrustedWorkspaces": {
+            "supported": true
+        }
+    },
     "main": "./dist/extension",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
