@@ -17,6 +17,77 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
     provideChangeLog(): ChangeLogItem[] {
         const changeLog: ChangeLogItem[] = [];
 
+        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.3.0", releaseDate: "May 2021" } });
+        changeLog.push({
+            kind: ChangeLogKind.NEW,
+            detail: {
+                message: "Support <b>Workspace Trust</b>",
+                id: 39,
+                kind: IssueKind.Issue
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.NEW,
+            detail: {
+                message: "Support <b>Virtual Workspaces</b>",
+                id: 38,
+                kind: IssueKind.Issue
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Do not show welcome message if installed by Settings Sync",
+                id: 22,
+                kind: IssueKind.Issue
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: lodash",
+                id: 37,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: ssri",
+                id: 25,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: y18n",
+                id: 24,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: elliptic",
+                id: 21,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: ini",
+                id: 20,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+
         changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.2.1", releaseDate: "November 2020" } });
         changeLog.push({
             kind: ChangeLogKind.FIXED,
@@ -65,43 +136,6 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
             }
         });
         
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.0.0", releaseDate: "February 2020" } });
-        changeLog.push({
-            kind: ChangeLogKind.CHANGED,
-            detail: {
-                message: "DocWiki command now uses Rio URL",
-                id: 9,
-                kind: IssueKind.Issue
-            }
-        });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: {
-                message: "Use <vscode-ext-selection> NPM Package",
-                id: 10,
-                kind: IssueKind.Issue
-            }
-        });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: {
-                message: "Support VS Code package split",
-                id: 8,
-                kind: IssueKind.Issue
-            }
-        });
-
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "8.1.0", releaseDate: "May 2019" } });
-        changeLog.push({
-            kind: ChangeLogKind.NEW,
-            detail: {
-                message: "<b>Remote Development</b> support",
-                id: 6,
-                kind: IssueKind.PR,
-                kudos: "@mjbvz"
-            }
-        });
-
         return changeLog;
  
     }

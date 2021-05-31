@@ -1,3 +1,16 @@
+## [9.3.0] - 2021-05-31
+### Added
+- Support **Workspace Trust** (issue [#39](https://github.com/alefragnani/vscode-delphi-keybindings/issues/39))
+- Support **Virtual Workspaces** (issue [#38](https://github.com/alefragnani/vscode-delphi-keybindings/issues/38))
+
+### Internal
+- Do not show welcome message if installed by Settings Sync (issue [#22](https://github.com/alefragnani/vscode-delphi-keybindings/issues/22))
+- Security Alert: lodash (dependabot [PR #37](https://github.com/alefragnani/vscode-delphi-keybindings/pull/37))
+- Security Alert: ssri (dependabot [PR #25](https://github.com/alefragnani/vscode-delphi-keybindings/pull/25))
+- Security Alert: y18n (dependabot [PR #24](https://github.com/alefragnani/vscode-delphi-keybindings/pull/24))
+- Security Alert: elliptic (dependabot [PR #21](https://github.com/alefragnani/vscode-delphi-keybindings/pull/21))
+- Security Alert: ini (dependabot [PR #20](https://github.com/alefragnani/vscode-delphi-keybindings/pull/20))
+
 ## [9.2.1] - 2020-11-17
 ### Fixed
 - Word navigation (issue [#17](https://github.com/alefragnani/vscode-delphi-keybindings/issues/17))
