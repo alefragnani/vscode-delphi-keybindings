@@ -1,3 +1,8 @@
+## [9.4.0] - 2021-11-07
+### Internal
+* Add CONTRIBUTING documentation (issue [#43](https://github.com/alefragnani/vscode-delphi-keybindings/issues/43))
+* Update dependencies (issue [#45](https://github.com/alefragnani/vscode-delphi-keybindings/issues/45))
+
 ## [9.3.0] - 2021-05-31
 ### Added
 - Support **Workspace Trust** (issue [#39](https://github.com/alefragnani/vscode-delphi-keybindings/issues/39))
