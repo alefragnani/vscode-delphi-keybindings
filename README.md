@@ -62,5 +62,4 @@ If you are looking for the same **Bookmarks** experience from **Delphi**, try ou
 
 ## License
 
-[MIT](LICENSE.md) &copy; Alessandro Fragnani
-
+[GPL-3.0](LICENSE.md) &copy; Alessandro Fragnani
