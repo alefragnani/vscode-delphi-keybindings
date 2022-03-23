@@ -59,8 +59,7 @@
             },
             {
                 "command": "delphiKeybindings.whatsNew",
-                "title": "Delphi Keymap: What's New",
-                "enablement": "!isWeb"
+                "title": "Delphi Keymap: What's New"
             }
         ],
         "keybindings": [
