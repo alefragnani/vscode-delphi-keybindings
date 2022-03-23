@@ -8,11 +8,11 @@ import { Container } from "../container";
 import { WhatsNewManager } from "../../vscode-whats-new/src/Manager";
 import { DelphiKeybindingsContentProvider, DelphiKeybindingsSocialMediaProvider } from "./contentProvider";
 
-export function registerWhatsNew() {
+export async function registerWhatsNew() {
     const provider = new DelphiKeybindingsContentProvider();
     const viewer = new WhatsNewManager(Container.context)
         .registerContentProvider("alefragnani", "delphi-keybindings", provider)
         .registerSocialMediaProvider(new DelphiKeybindingsSocialMediaProvider())
-    viewer.showPageInActivation();
+    await viewer.showPageInActivation();
     Container.context.subscriptions.push(commands.registerCommand('delphiKeybindings.whatsNew', () => viewer.showPage()))
 }

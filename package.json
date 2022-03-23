@@ -35,7 +35,8 @@
             "supported": true
         }
     },
-    "main": "./dist/extension",
+    "main": "./dist/extension-node.js",
+    "browser": "./dist/extension-web.js",
     "icon": "images/icon.png",
     "license": "GPL-3.0",
     "homepage": "https://github.com/alefragnani/vscode-delphi-keybindings/blob/master/README.md",
