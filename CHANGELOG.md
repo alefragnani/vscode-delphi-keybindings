@@ -1,3 +1,8 @@
+## [9.5.0] - 2022-03-29
+### Internal
+* Add Web support (issue [#42](https://github.com/alefragnani/vscode-delphi-keybindings/issues/49))
+* Change license do GPLv3 (issue [#50](https://github.com/alefragnani/vscode-delphi-keybindings/issues/50))
+
 ## [9.4.0] - 2021-11-07
 ### Internal
 * Add CONTRIBUTING documentation (issue [#43](https://github.com/alefragnani/vscode-delphi-keybindings/issues/43))
