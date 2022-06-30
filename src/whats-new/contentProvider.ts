@@ -151,8 +151,8 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
     provideSupportChannels(): SupportChannel[] {
         const supportChannels: SupportChannel[] = [];
         supportChannels.push({
-            title: "Become a sponsor on Patreon",
-            link: "https://www.patreon.com/alefragnani",
+            title: "Become a sponsor on GitHub",
+            link: "https://github.com/sponsors/alefragnani",
             message: "Become a Sponsor"
         });
         supportChannels.push({
