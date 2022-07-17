@@ -17,6 +17,12 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
     provideChangeLog(): ChangeLogItem[] {
         const changeLog: ChangeLogItem[] = [];
 
+        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.5.1", releaseDate: "June 2022" } });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: "Add <b>GitHub Sponsors</b> support"
+        });
+
         changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.5.0", releaseDate: "March 2022" } });
         changeLog.push({
             kind: ChangeLogKind.INTERNAL,
@@ -123,29 +129,8 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
                 kudos: "dependabot"
             }
         });
-
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.2.1", releaseDate: "November 2020" } });
-        changeLog.push({
-            kind: ChangeLogKind.FIXED,
-            detail: {
-                message: "Word navigation",
-                id: 17,
-                kind: IssueKind.Issue
-            }
-        });
-
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.2.0", releaseDate: "September 2020" } });
-        changeLog.push({
-            kind: ChangeLogKind.NEW,
-            detail: {
-                message: "<b>Codespaces</b> Support",
-                id: 16,
-                kind: IssueKind.Issue
-            }
-        });
         
         return changeLog;
- 
     }
 
     provideSupportChannels(): SupportChannel[] {
