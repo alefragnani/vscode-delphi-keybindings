@@ -23,7 +23,7 @@
         "onCommand:delphiKeybindings.help",
         "onCommand:delphiKeybindings.selectWord",
         "onCommand:delphiKeybindings.whatsNew",
-        "*"
+        "onStartupFinished"
     ],
     "extensionKind": [
         "ui",
