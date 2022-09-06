@@ -200,10 +200,10 @@
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
-                "mac": "cmd+p",
-                "win": "ctrl+p",
-                "linux": "ctrl+p",
-                "key": "ctrl+p",
+                "mac": "cmd+f12",
+                "win": "ctrl+f12",
+                "linux": "ctrl+f12",
+                "key": "ctrl+f12",
                 "command": "workbench.action.quickOpen"
             },
             {
