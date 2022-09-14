@@ -33,7 +33,7 @@ export function registerCommands() {
         if (selection.isEmpty) {
             selectWordAtCursorPosition(editor);
         }
-        let baseUrl = "http://docwiki.embarcadero.com/RADStudio/Rio/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
+        let baseUrl = "https://docwiki.embarcadero.com/RADStudio/Alexandria/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
         baseUrl = baseUrl.replace("%%SEARCH%%", editor.document.getText(editor.selection))
         
         env.openExternal(Uri.parse(baseUrl));
