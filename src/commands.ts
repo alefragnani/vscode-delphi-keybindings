@@ -3,8 +3,9 @@
 *  Licensed under the GPLv3 License. See License.md in the project root for license information.
 *--------------------------------------------------------------------------------------------*/
 
-import { commands, env, Uri, window } from "vscode";
+import { commands, env, Uri, window, workspace } from "vscode";
 import { selectWordAtCursorPosition } from "vscode-ext-selection";
+import { DEFAULT_DELPHI_VERSION_FOR_DOCWIKI } from "./constants";
 import { Container } from './container';
 
 export function registerCommands() {
@@ -33,8 +34,10 @@ export function registerCommands() {
         if (selection.isEmpty) {
             selectWordAtCursorPosition(editor);
         }
-        let baseUrl = "https://docwiki.embarcadero.com/RADStudio/Alexandria/e/index.php?title=Special%3ASearch&search=%%SEARCH%%&fulltext=Search";
-        baseUrl = baseUrl.replace("%%SEARCH%%", editor.document.getText(editor.selection))
+
+        const delphiVersion = workspace.getConfiguration("delphiKeybindings").get<string>("delphiVersionInDocWiki", DEFAULT_DELPHI_VERSION_FOR_DOCWIKI);
+        const textToSearchFor = editor.document.getText(editor.selection);
+        const baseUrl = `https://docwiki.embarcadero.com/RADStudio/${delphiVersion}/e/index.php?title=Special%3ASearch&search=${textToSearchFor}&fulltext=Search`;
         
         env.openExternal(Uri.parse(baseUrl));
     });
