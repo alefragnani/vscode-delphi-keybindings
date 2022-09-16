@@ -6,6 +6,7 @@
 import * as vscode from 'vscode';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
+import { setupTestSuite, teardownTestSuite } from './setupTests';
 
 suite('selectWord command', () => {
     
@@ -74,6 +75,11 @@ suite('selectWord command', () => {
 });
 
 suite('DocWiki command', () => {
+
+    const originalValue = {};
+    suiteSetup(async () => await setupTestSuite(originalValue));
+    suiteTeardown(async () => await teardownTestSuite(originalValue));
+
     test('can call docwiki for some word', async () => {
         // opens a file
         const filename = vscode.Uri.joinPath(vscode.workspace.workspaceFolders[0].uri, 'test.md');
@@ -94,7 +100,7 @@ suite('DocWiki command', () => {
 
         // assert - must be called
         assert(expectation.calledOnce);
-        assert(expectation.calledOnceWith(vscode.Uri.parse('https://docwiki.embarcadero.com/RADStudio/Alexandria/e/index.php?title=Special%3ASearch&search=thank&fulltext=Search')));
+        assert(expectation.calledOnceWith(vscode.Uri.parse('https://docwiki.embarcadero.com/RADStudio/Seattle/e/index.php?title=Special%3ASearch&search=thank&fulltext=Search')));
     });
 
     test('cannot call docwiki if no file is open', async () => {
