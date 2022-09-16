@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
 
-suite('Commands', () => {
+suite('selectWord command', () => {
     
     // suiteSetup(() => 
     // );
@@ -56,11 +56,55 @@ suite('Commands', () => {
         await vscode.commands.executeCommand('workbench.action.closeAllEditors');
 
         const mock = sinon.mock(vscode.window);
-        const expectation = mock.expects("showInformationMessage");
+        const expectation = mock.expects('showInformationMessage');
         
         // runs the command
         await vscode.commands.executeCommand('delphiKeybindings.selectWord');
+
+        mock.restore();
         
+        // assert - must be called
+        assert(expectation.calledOnce);
+    });
+});
+
+suite('DocWiki command', () => {
+    test('can call docwiki for some word', async () => {
+        // opens a file
+        const filename = vscode.Uri.joinPath(vscode.workspace.workspaceFolders[0].uri, 'test.md');
+        const doc = await vscode.workspace.openTextDocument(filename);
+        await vscode.window.showTextDocument(doc);
+
+        // put the cursor at the `thank` word 
+        const sel = new vscode.Selection(new vscode.Position(2, 16), new vscode.Position(2, 16));
+        vscode.window.activeTextEditor.selection = sel;
+
+        const mock = sinon.mock(vscode.env);
+        const expectation = mock.expects('openExternal');
+        
+        // runs the command
+        await vscode.commands.executeCommand('delphiKeybindings.help');
+
+        mock.restore();
+
+        // assert - must be called
+        assert(expectation.calledOnce);
+        assert(expectation.calledOnceWith(vscode.Uri.parse('https://docwiki.embarcadero.com/RADStudio/Alexandria/e/index.php?title=Special%3ASearch&search=thank&fulltext=Search')));
+    });
+
+    test('cannot call docwiki if no file is open', async () => {
+        // closes all files
+        await vscode.commands.executeCommand('workbench.action.closeAllEditors');
+
+        const mock = sinon.mock(vscode.window);
+        const expectation = mock.expects('showInformationMessage');
+        
+        // runs the command
+        await vscode.commands.executeCommand('delphiKeybindings.help');
+
+        mock.restore();
+        
+        // assert - must be called
         assert(expectation.calledOnce);
     });
 });
