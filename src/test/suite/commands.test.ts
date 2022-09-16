@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import * as assert from 'assert';
-
+import * as sinon from 'sinon';
 
 suite('Commands', () => {
     
@@ -49,5 +49,18 @@ suite('Commands', () => {
 
         // assert - the new select must be `thank`
         assert.ok(text === '');
+    });
+
+    test('cannot select word if no file is open', async () => {
+        // closes all files
+        await vscode.commands.executeCommand('workbench.action.closeAllEditors');
+
+        const mock = sinon.mock(vscode.window);
+        const expectation = mock.expects("showInformationMessage");
+        
+        // runs the command
+        await vscode.commands.executeCommand('delphiKeybindings.selectWord');
+        
+        assert(expectation.calledOnce);
     });
 });
