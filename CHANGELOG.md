@@ -1,16 +1,28 @@
+## [9.6.0] - 2022-10-01
+### Added
+- New `Search for Units` keybinding (issue [#59](https://github.com/alefragnani/vscode-delphi-keybindings/issues/59))
+- Update `DocWiki` command to use Alexandria release (issue [#61](https://github.com/alefragnani/vscode-delphi-keybindings/issues/61))
+- Setting to choose Delphi release for `DocWiki` command (issue [#62](https://github.com/alefragnani/vscode-delphi-keybindings/issues/62))
+
+### Internal
+- Package cleanup (issue [#55](https://github.com/alefragnani/vscode-delphi-keybindings/issues/55))
+- Add tests (issue [#66](https://github.com/alefragnani/vscode-delphi-keybindings/issues/66))
+- Improve extension startup (issue [#54](https://github.com/alefragnani/vscode-delphi-keybindings/issues/54))
+- Security Alert: terser (dependabot [PR #67](https://github.com/alefragnani/vscode-delphi-keybindings/pull/25))
+
 ## [9.5.1] - 2022-07-17
 ### Internal
-* Add GitHub Sponsors support (PR [#53](https://github.com/alefragnani/vscode-delphi-keybindings/pull/53))
+- Add GitHub Sponsors support (PR [#53](https://github.com/alefragnani/vscode-delphi-keybindings/pull/53))
 
 ## [9.5.0] - 2022-03-29
 ### Internal
-* Add Web support (issue [#42](https://github.com/alefragnani/vscode-delphi-keybindings/issues/42))
-* Change license do GPLv3 (issue [#50](https://github.com/alefragnani/vscode-delphi-keybindings/issues/50))
+- Add Web support (issue [#42](https://github.com/alefragnani/vscode-delphi-keybindings/issues/42))
+- Change license do GPLv3 (issue [#50](https://github.com/alefragnani/vscode-delphi-keybindings/issues/50))
 
 ## [9.4.0] - 2021-11-07
 ### Internal
-* Add CONTRIBUTING documentation (issue [#43](https://github.com/alefragnani/vscode-delphi-keybindings/issues/43))
-* Update dependencies (issue [#45](https://github.com/alefragnani/vscode-delphi-keybindings/issues/45))
+- Add CONTRIBUTING documentation (issue [#43](https://github.com/alefragnani/vscode-delphi-keybindings/issues/43))
+- Update dependencies (issue [#45](https://github.com/alefragnani/vscode-delphi-keybindings/issues/45))
 
 ## [9.3.0] - 2021-05-31
 ### Added

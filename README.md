@@ -8,7 +8,7 @@
   <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="60%" /></a>
 </p>
 
-# What's new in Delphi Keymap 9.5
+# What's new in Delphi Keymap 9.6
 
 * Adds **Web** support
 * Adds **Workspace Trust** support
@@ -56,6 +56,13 @@ Delete Line | Ctrl + Y | | Step Over | F8
 Show Snippets | Ctrl + J | | Step Into | F7
 Help Insight | Ctrl + Shift + H | | Toggle Breakpoint | F5
 Help | F1 | | Evaluate/Modify | Ctrl + F7
+
+## Available Settings
+
+* Choose the Delphi version to be used in DocWiki (`Alexandria` by default)
+```json
+    "delphiKeybindings.delphiVersionInDocWiki": "Tokyo"
+```
 
 ## Bookmarks
 
