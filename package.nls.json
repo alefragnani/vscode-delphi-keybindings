@@ -1,0 +1,7 @@
+{
+    "delphiKeybindings.configuration.title": "Delphi Keymap",
+    "delphiKeybindings.configuration.delphiVersionInDocWiki.description": "Choose the Delphi version to be used in DocWiki",
+    "delphiKeybindings.commands.help.title": "Delphi Keymap: DocWiki Help",
+    "delphiKeybindings.commands.selectWord.title": "Delphi Keymap: Select Word",
+    "delphiKeybindings.commands.whatsNew.title": "Delphi Keymap: What's New"
+}

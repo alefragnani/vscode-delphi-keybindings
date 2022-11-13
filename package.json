@@ -53,12 +53,12 @@
     },
     "contributes": {
         "configuration": {
-            "title": "Delphi Keymap",
+            "title": "%delphiKeybindings.configuration.title%",
             "properties": {
                 "delphiKeybindings.delphiVersionInDocWiki": {
                     "type": "string",
                     "default": "Alexandria",
-                    "description": "Choose the Delphi version to be used in DocWiki",
+                    "description": "%delphiKeybindings.configuration.delphiVersionInDocWiki.description%",
                     "enum": [
                         "Alexandria",
                         "Sydney",
@@ -81,15 +81,15 @@
         "commands": [
             {
                 "command": "delphiKeybindings.help",
-                "title": "Delphi Keymap: DocWiki Help"
+                "title": "%delphiKeybindings.commands.help.title%"
             },
             {
                 "command": "delphiKeybindings.selectWord",
-                "title": "Delphi Keymap: Select Word"
+                "title": "%delphiKeybindings.commands.selectWord.title%"
             },
             {
                 "command": "delphiKeybindings.whatsNew",
-                "title": "Delphi Keymap: What's New"
+                "title": "%delphiKeybindings.commands.whatsNew.title%"
             }
         ],
         "keybindings": [
