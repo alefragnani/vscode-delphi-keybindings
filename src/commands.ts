@@ -3,7 +3,7 @@
 *  Licensed under the GPLv3 License. See License.md in the project root for license information.
 *--------------------------------------------------------------------------------------------*/
 
-import { commands, env, window, workspace } from "vscode";
+import { commands, env, window, workspace, l10n } from "vscode";
 import { selectWordAtCursorPosition } from "vscode-ext-selection";
 import { DEFAULT_DELPHI_VERSION_FOR_DOCWIKI } from "./constants";
 import { Container } from './container';
@@ -14,8 +14,8 @@ export function registerCommands() {
     const disposableSelectWord = commands.registerCommand('delphiKeybindings.selectWord', () => {
         const editor = window.activeTextEditor;
         if (!editor) {
-          window.showInformationMessage("Open a file first to select word");
-          return;
+            window.showInformationMessage(l10n.t("Open a file first to select word"));
+            return;
         }
         const selection = editor.selection;
         if (selection.isEmpty) {
@@ -28,7 +28,7 @@ export function registerCommands() {
     const disposableHelp = commands.registerCommand('delphiKeybindings.help', () => {
         const editor = window.activeTextEditor;
         if (!editor) {
-            window.showInformationMessage("Open a file first to locate help in DocWiki");
+            window.showInformationMessage(l10n.t("Open a file first to locate help in DocWiki"));
             return;
           }
         const selection = editor.selection;
