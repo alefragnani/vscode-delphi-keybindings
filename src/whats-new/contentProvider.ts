@@ -17,6 +17,41 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
     provideChangeLog(): ChangeLogItem[] {
         const changeLog: ChangeLogItem[] = [];
 
+        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.7.0", releaseDate: "January 2024" } });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Support <b>Translation</b> and <b>Localization</b> APIs",
+                id: 70,
+                kind: IssueKind.Issue
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Support Implicit Activation Events",
+                id: 74,
+                kind: IssueKind.Issue
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Update badges in README",
+                id: 76,
+                kind: IssueKind.Issue
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: minimatch",
+                id: 72,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+
         changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.6.0", releaseDate: "September 2022" } });
         changeLog.push({
             kind: ChangeLogKind.NEW,
@@ -100,24 +135,6 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
             }
         });
 
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.4.0", releaseDate: "October 2021" } });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: {
-                message: "Add CONTRIBUTING documentation",
-                id: 43,
-                kind: IssueKind.Issue
-            }
-        });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: {
-                message: "Update dependencies",
-                id: 45,
-                kind: IssueKind.Issue
-            }
-        });
-        
         return changeLog;
     }
 

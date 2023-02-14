@@ -1,3 +1,10 @@
+## [9.7.0] - 2023-02-13
+### Internal
+- Support **Translation** and **Localization** APIs (issue [#70](https://github.com/alefragnani/vscode-delphi-keybindings/issues/70))
+- Support Implicit Activation Events (issue [#74](https://github.com/alefragnani/vscode-delphi-keybindings/issues/74))
+- Update badges in README (issue [#76](https://github.com/alefragnani/vscode-delphi-keybindings/issues/76))
+- Security Alert: minimatch (dependabot [PR #72](https://github.com/alefragnani/vscode-delphi-keybindings/pull/72))
+
 ## [9.6.0] - 2022-10-01
 ### Added
 - New `Search for Units` keybinding (issue [#59](https://github.com/alefragnani/vscode-delphi-keybindings/issues/59))
@@ -8,7 +15,7 @@
 - Package cleanup (issue [#55](https://github.com/alefragnani/vscode-delphi-keybindings/issues/55))
 - Add tests (issue [#66](https://github.com/alefragnani/vscode-delphi-keybindings/issues/66))
 - Improve extension startup (issue [#54](https://github.com/alefragnani/vscode-delphi-keybindings/issues/54))
-- Security Alert: terser (dependabot [PR #67](https://github.com/alefragnani/vscode-delphi-keybindings/pull/25))
+- Security Alert: terser (dependabot [PR #67](https://github.com/alefragnani/vscode-delphi-keybindings/pull/67))
 
 ## [9.5.1] - 2022-07-17
 ### Internal

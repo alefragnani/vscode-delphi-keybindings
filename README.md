@@ -8,13 +8,13 @@
   <a title="Learn more about Delphi Keymap" href="http://github.com/alefragnani/vscode-delphi-keybindings"><img src="https://raw.githubusercontent.com/alefragnani/vscode-delphi-keybindings/master/images/vscode-delphi-keybindings-logo-readme.png" alt="Delphi Keymap Logo" width="60%" /></a>
 </p>
 
-# What's new in Delphi Keymap 9.6
+# What's new in Delphi Keymap 9.7
 
+* Adds **Localization** support
+* Adds new setting to choose Delphi release for `DocWiki`
 * Adds **Web** support
 * Adds **Workspace Trust** support
 * Adds **Virtual Workspaces** support
-* Adds **Codespaces** support
-* Adds **Remote Development** support
 
 # Support
 
