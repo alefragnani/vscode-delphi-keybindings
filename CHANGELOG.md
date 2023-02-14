@@ -1,3 +1,7 @@
+## [9.7.1] - 2023-02-13
+### Fixed
+- Typo in What's New
+
 ## [9.7.0] - 2023-02-13
 ### Internal
 - Support **Translation** and **Localization** APIs (issue [#70](https://github.com/alefragnani/vscode-delphi-keybindings/issues/70))
