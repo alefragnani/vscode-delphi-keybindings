@@ -17,7 +17,7 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
     provideChangeLog(): ChangeLogItem[] {
         const changeLog: ChangeLogItem[] = [];
 
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.7.0", releaseDate: "January 2024" } });
+        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.7.0", releaseDate: "January 2023" } });
         changeLog.push({
             kind: ChangeLogKind.INTERNAL,
             detail: {
