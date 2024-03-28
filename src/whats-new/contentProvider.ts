@@ -17,6 +17,50 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
     provideChangeLog(): ChangeLogItem[] {
         const changeLog: ChangeLogItem[] = [];
 
+        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.8.0", releaseDate: "February 2024" } });
+        changeLog.push({
+            kind: ChangeLogKind.NEW,
+            detail: {
+                message: "Publish to Open VSX",
+                id: 47,
+                kind: IssueKind.Issue,
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.CHANGED,
+            detail: {
+                message: "Avoid What's New when using Gitpod",
+                id: 80,
+                kind: IssueKind.Issue,
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.CHANGED,
+            detail: {
+                message: "Avoid What's New when installing lower versions",
+                id: 80,
+                kind: IssueKind.Issue,
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: word-wrap",
+                id: 81,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+        changeLog.push({
+            kind: ChangeLogKind.INTERNAL,
+            detail: {
+                message: "Security Alert: webpack",
+                id: 78,
+                kind: IssueKind.PR,
+                kudos: "dependabot"
+            }
+        });
+
         changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.7.0", releaseDate: "January 2023" } });
         changeLog.push({
             kind: ChangeLogKind.INTERNAL,
@@ -108,30 +152,6 @@ export class DelphiKeybindingsContentProvider implements ContentProvider {
                 id: 67,
                 kind: IssueKind.PR,
                 kudos: "dependabot"
-            }
-        });
-
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.5.1", releaseDate: "June 2022" } });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: "Add <b>GitHub Sponsors</b> support"
-        });
-
-        changeLog.push({ kind: ChangeLogKind.VERSION, detail: { releaseNumber: "9.5.0", releaseDate: "March 2022" } });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: {
-                message: "Add Web support",
-                id: 42,
-                kind: IssueKind.Issue
-            }
-        });
-        changeLog.push({
-            kind: ChangeLogKind.INTERNAL,
-            detail: {
-                message: "Change license to GPLv3",
-                id: 50,
-                kind: IssueKind.Issue
             }
         });
 

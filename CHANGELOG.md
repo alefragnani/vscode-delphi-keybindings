@@ -1,3 +1,15 @@
+## [9.8.0] - 2024-03-28
+### Added
+- Published to Open VSX (issue [#47](https://github.com/alefragnani/vscode-delphi-keybindings/issues/47))
+
+### Changed
+- Avoid What's New when using Gitpod (issue [#80](https://github.com/alefragnani/vscode-delphi-keybindings/issues/80))
+- Avoid What's New when installing lower versions (issue [#80](https://github.com/alefragnani/vscode-delphi-keybindings/issues/80))
+
+### Internal
+- Security Alert: word-wrap (dependabot [PR #81](https://github.com/alefragnani/vscode-delphi-keybindings/pull/81))
+- Security Alert: webpack (dependabot [PR #78](https://github.com/alefragnani/vscode-delphi-keybindings/pull/78))
+
 ## [9.7.1] - 2023-02-13
 ### Fixed
 - Typo in What's New
