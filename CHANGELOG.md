@@ -1,3 +1,8 @@
+## [9.8.1] - 2025-02-03
+### Internal
+- Security Alert: webpack (dependabot [PR #84](https://github.com/alefragnani/vscode-delphi-keybindings/pull/84))
+- Security Alert: braces (dependabot [PR #82](https://github.com/alefragnani/vscode-delphi-keybindings/pull/82))
+
 ## [9.8.0] - 2024-03-28
 ### Added
 - Published to Open VSX (issue [#47](https://github.com/alefragnani/vscode-delphi-keybindings/issues/47))
