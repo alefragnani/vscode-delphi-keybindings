@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delphi Keymap brings popular Delphi keyboard shortcuts to Visual Studio Code, including debugging, editing, navigation, and DocWiki help commands.">
+    <title>Delphi Keymap for VS Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top" aria-label="Delphi Keymap home">
+                <img src="images/icon.png" alt="Delphi Keymap icon" class="brand-mark">
+                <span class="brand-copy">
+                    <strong>Delphi Keymap</strong>
+                    <!-- <span>for VS Code</span> -->
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="top-nav" aria-label="Open menu" title="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav id="top-nav" class="top-nav" aria-label="Primary navigation">
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <a href="#donate"><i class="fa-solid fa-heart" aria-hidden="true"></i> Donate</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://github.com/alefragnani/vscode-delphi-keybindings" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true" style="font-size: 24px;"></i>
+                </a>
+            </div>
+        </header>
+
+        <main id="top">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Visual Studio Code Extension</p>
+                    <h1>Delphi muscle memory, right in VS Code.</h1>
+                    <p class="hero-text">
+                        Delphi Keymap ports the popular Delphi keyboard shortcuts to Visual Studio Code, so you can
+                        debug, edit, and navigate the way you always have, without retraining your hands.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="https://marketplace.visualstudio.com/items?itemName=alefragnani.delphi-keybindings">Get it on Marketplace</a>
+                        <a class="button button-muted" href="https://open-vsx.org/extension/alefragnani/delphi-keybindings">Open VSX</a>
+                    </div>
+                    <ul class="hero-points" aria-label="Delphi Keymap highlights">
+                        <li>Debugging shortcuts like <kbd>F9</kbd> (Run)</li>
+                        <li>Editing shortcuts like <kbd>Ctrl</kbd> + <kbd>;</kbd> (Comment Line)</li>
+                        <li>Navigation shortcuts like <kbd>Alt</kbd> + <kbd>G</kbd> (Go To Line)</li>
+                    </ul>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card hero-card-shot">
+                        <div class="shortcut-table-card" role="region" aria-label="Delphi Keymap shortcuts quick reference">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Command</th>
+                                        <th scope="col">Keyboard Shortcut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Help</td><td><kbd>F1</kbd></td></tr>
+                                    <tr><td>Save All</td><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td></tr>
+                                    <tr><td>Find / Replace</td><td><kbd>Ctrl</kbd> + <kbd>H</kbd></td></tr>
+                                    <tr><td>Format</td><td><kbd>Ctrl</kbd> + <kbd>D</kbd></td></tr>
+                                    <tr><td>Go To Line</td><td><kbd>Alt</kbd> + <kbd>G</kbd></td></tr>
+                                    <tr><td>IDE Insight</td><td><kbd>Ctrl</kbd> + <kbd>.</kbd></td></tr>
+                                    <tr><td>Refactor / Rename</td><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></td></tr>
+                                    <tr><td>Comment Line</td><td><kbd>Ctrl</kbd> + <kbd>;</kbd></td></tr>
+                                    <tr><td>Delete Line</td><td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td></tr>
+                                    <tr><td>Toggle Breakpoint</td><td><kbd>F5</kbd></td></tr>
+                                    <tr><td>Compile</td><td><kbd>Ctrl</kbd> + <kbd>F9</kbd></td></tr>
+                                    <tr><td>Run</td><td><kbd>F9</kbd></td></tr>
+                                    <tr><td>Step Over</td><td><kbd>F8</kbd></td></tr>
+                                    <tr><td>Step Into</td><td><kbd>F7</kbd></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="announcement">
+                <p class="eyebrow">What&apos;s new in 9.8</p>
+                <div class="announcement-grid">
+                    <article>
+                        <h2>Broader reach, better localization</h2>
+                        <p>Delphi Keymap is now published to Open VSX and runs in the browser, while new localization support keeps messages readable in more languages.</p>
+                    </article>
+                    <ul>
+                        <li>Published to Open VSX</li>
+                        <li>Adds Localization support</li>
+                        <li>Adds new setting to choose Delphi release for DocWiki</li>
+                        <li>Adds Web support</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="feature-index" id="features">
+                <div class="section-heading">
+                    <p class="eyebrow">Features</p>
+                    <h2>Jump to the key capabilities.</h2>
+                </div>
+                <div class="feature-grid">
+                    <a class="feature-card" href="#delphi-shortcuts">
+                        <span class="feature-number">01</span>
+                        <h3>Delphi Shortcuts</h3>
+                        <p>A full set of debugging, editing, and navigation keybindings ported from the Delphi IDE.</p>
+                    </a>
+                    <a class="feature-card" href="#docwiki-help">
+                        <span class="feature-number">02</span>
+                        <h3>DocWiki Help</h3>
+                        <p>Select a symbol and jump straight to its Embarcadero DocWiki documentation page.</p>
+                    </a>
+                    <a class="feature-card" href="#select-word">
+                        <span class="feature-number">03</span>
+                        <h3>Select Word</h3>
+                        <p>Select the word under the cursor with a single command, just like in Delphi.</p>
+                    </a>
+                    <a class="feature-card" href="#multiplatform">
+                        <span class="feature-number">04</span>
+                        <h3>Multiplatform</h3>
+                        <p>Runs in the desktop and in the browser, available for VS Code and any other compatible editor.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="spotlight" id="delphi-shortcuts">
+                <div class="spotlight-copy">
+                    <p class="eyebrow">Delphi shortcuts</p>
+                    <h2>Debugging, editing, and navigation keys you already know.</h2>
+                    <p>
+                        Delphi Keymap remaps VS Code's built-in commands to the keyboard shortcuts Delphi developers
+                        rely on every day, covering debugging, formatting, refactoring, and cursor movement.
+                    </p>
+                    <div class="detail-list">
+                        <div>
+                            <h3>Debugging</h3>
+                            <p>Basic commands like <kbd>F9</kbd> (Run/Continue), <kbd>F8</kbd> (Step Over) and <kbd>F7</kbd> (Step Into).</p>
+                        </div>
+                        <div>
+                            <h3>Editing &amp; navigation</h3>
+                            <p>Commands like <kbd>Ctrl</kbd> + <kbd>D</kbd> (Format), <kbd>Ctrl</kbd> + <kbd>Y</kbd> (Delete Line), <kbd>Ctrl</kbd> + <kbd>;</kbd> (Comment Line) and others like <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> (Rename), <kbd>Ctrl</kbd> + <kbd>G</kbd> (Go To Declaration), <kbd>Alt</kbd> + <kbd>G</kbd> (Go To Line).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spotlight" id="docwiki-help">
+                <div class="spotlight-copy">
+                    <p class="eyebrow">DocWiki help</p>
+                    <h2>Look up any symbol without leaving the editor.</h2>
+                    <p>
+                        Press <kbd>F1</kbd> (or run <code>Delphi Keymap: DocWiki Help</code>) to open Embarcadero's DocWiki
+                        documentation for the selected symbol, using the Delphi release configured in settings.
+                    </p>
+                    <div class="command-list">
+                        <article>
+                            <h3>How it works</h3>
+                            <ul>
+                                <li>Selects the word under the cursor if nothing is selected</li>
+                                <li>Opens the matching DocWiki page in your default browser</li>
+                                <li>Uses the version chosen in <code>delphiKeybindings.delphiVersionInDocWiki</code></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="spotlight-visual">
+                        <pre class="json-example"><code><span class="json-punctuation">{</span>
+  <span class="json-key">"delphiKeybindings.delphiVersionInDocWiki"</span><span class="json-punctuation">:</span> <span class="json-string">"Tokyo"</span>
+<span class="json-punctuation">}</span></code></pre>
+                </div>
+            </section>
+
+            <section class="settings-section" id="select-word">
+                <div class="section-heading">
+                    <p class="eyebrow">Select Word</p>
+                    <h2>One keystroke, one word selected.</h2>
+                </div>
+                <div class="settings-grid">
+                    <article>
+                        <h3>Delphi Keymap: Select Word</h3>
+                        <ul>
+                            <li>Selects the word at the current cursor position</li>
+                            <li>Bound to <kbd>F1</kbd> alongside the DocWiki Help flow</li>
+                            <li>Matches the familiar Delphi editing behavior</li>
+                            <li>Works even when the cursor sits mid-word</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>Choosing a Delphi release</h3>
+                        <ul>
+                            <li>Pick from Alexandria, Sydney, Rio, Tokyo, Berlin, or Seattle</li>
+                            <li>Defaults to Delphi 11 Alexandria</li>
+                            <li>Controls which DocWiki version is opened</li>
+                            <li>Set per user or per workspace</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="sidebar-section" id="multiplatform">
+                <div class="spotlight-copy">
+                    <p class="eyebrow">Multiplatform</p>
+                    <h2>Available wherever you code.</h2>
+                    <p>
+                        Delphi Keymap runs in desktop VS Code as well as in the browser (vscode.dev, github.dev), and is
+                        published to both the Visual Studio Marketplace and Open VSX.
+                    </p>
+                </div>
+            </section>
+
+            <section class="feature-index faq-section" id="faq">
+                <div class="section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Quick answers for common questions.</h2>
+                </div>
+                <div class="faq-list">
+                    <details>
+                        <summary>What does Delphi Keymap actually change?</summary>
+                        <p>It remaps VS Code's built-in commands to the keyboard shortcuts you already use in Delphi, covering debugging (<kbd>F9</kbd>, <kbd>F8</kbd>, <kbd>F7</kbd>, <kbd>F5</kbd>), editing (<kbd>Ctrl</kbd> + <kbd>D</kbd>, <kbd>Ctrl</kbd> + <kbd>Y</kbd>, <kbd>Ctrl</kbd> + <kbd>;</kbd>), and navigation (<kbd>Ctrl</kbd> + <kbd>G</kbd>, <kbd>Alt</kbd> + <kbd>G</kbd>). No new editor behavior is added, only familiar key bindings.</p>
+                    </details>
+                    <details>
+                        <summary>How do I open DocWiki help for a symbol?</summary>
+                        <p>Select or place the cursor on a symbol and run <strong>Delphi Keymap: DocWiki Help</strong> (or press <kbd>F1</kbd>). It opens the Embarcadero DocWiki page for that symbol using the Delphi version set in <code>delphiKeybindings.delphiVersionInDocWiki</code>.</p>
+                    </details>
+                    <details>
+                        <summary>Which Delphi version does DocWiki Help use?</summary>
+                        <p>By default it uses Delphi 11 Alexandria. You can change it to Sydney, Rio, Tokyo, Berlin, or Seattle through the <code>delphiKeybindings.delphiVersionInDocWiki</code> setting.</p>
+                    </details>
+                    <details>
+                        <summary>Does Delphi Keymap work in the browser or with virtual workspaces?</summary>
+                        <p>Yes! Delphi Keymap ships both desktop and web bundles, supports virtual workspaces, and works with untrusted workspaces, so it runs in vscode.dev, github.dev, and restricted environments.</p>
+                    </details>
+                    <details>
+                        <summary>Is there a Bookmarks equivalent for Delphi users?</summary>
+                        <p>If you're looking for the same Bookmarks experience from Delphi, check out the companion <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks" class="text-link">Numbered Bookmarks</a> extension.</p>
+                    </details>
+                    <details>
+                        <summary>Does it work on VS Code forks like Cursor, Windsurf, and Antigravity?</summary>
+                        <p>Yes! It works on all VS Code forks, ensuring compatibility and seamless integration with your favorite tools.</p>
+                    </details>
+                    <details>
+                        <summary>I have a feature request, bug report, or suggestion.</summary>
+                        <p>If you have a feature request, bug report, or suggestion, please submit it through our <a href="https://github.com/alefragnani/vscode-delphi-keybindings/issues" class="text-link">GitHub Issues</a> page. We appreciate your feedback!</p>
+                    </details>
+                    <details>
+                        <summary>I have a question that's not listed here.</summary>
+                        <p>If you have a question that's not covered in the FAQ, feel free to reach out through our support channels at <a href="https://github.com/alefragnani/vscode-delphi-keybindings/discussions" class="text-link">GitHub Discussions</a>. We're here to help!</p>
+                    </details>
+                </div>
+            </section>
+
+            <section class="support-section" id="donate">
+                <div class="section-heading">
+                    <p class="eyebrow">Donate</p>
+                    <h2>Support the extension if you find it useful.</h2>
+                </div>
+                <div class="support-grid">
+                    <article>
+                        <h3>Why support it</h3>
+                        <p>Delphi Keymap is open source, and your support helps keep maintenance, improvements, and ecosystem compatibility moving forward.</p>
+                        <div class="link-row">
+                            <a class="text-link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EP57F3B6FXKTU&lc=US&item_name=Alessandro%20Fragnani&item_number=vscode%20extensions&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted">PayPal</a>
+                            <a class="text-link" href="https://github.com/sponsors/alefragnani">GitHub Sponsors</a>
+                            <a class="text-link" href="https://www.patreon.com/alefragnani">Patreon</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        
+    </div>
+    <footer class="site-footer">
+        <div class="footer-social">
+            <a href="https://twitter.com/alefragnani" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/alefragnani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alefragnani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="footer-copy">&copy; 2026 Alessandro Fragnani</div>
+    </footer>
+    <script>
+        (() => {
+            const header = document.querySelector(".site-header");
+            const navToggle = document.querySelector(".nav-toggle");
+            const topNav = document.querySelector("#top-nav");
+
+            if (!(header instanceof HTMLElement) || !(navToggle instanceof HTMLButtonElement) || !(topNav instanceof HTMLElement)) {
+                return;
+            }
+
+            const mobileQuery = window.matchMedia("(max-width: 900px)");
+
+            const setExpanded = (expanded) => {
+                navToggle.setAttribute("aria-expanded", String(expanded));
+                header.classList.toggle("nav-open", expanded);
+                navToggle.setAttribute("aria-label", expanded ? "Close menu" : "Open menu");
+                navToggle.setAttribute("title", expanded ? "Close menu" : "Open menu");
+            };
+
+            const closeMenu = () => setExpanded(false);
+
+            navToggle.addEventListener("click", () => {
+                const expanded = navToggle.getAttribute("aria-expanded") === "true";
+                setExpanded(!expanded);
+            });
+
+            topNav.addEventListener("click", (event) => {
+                const target = event.target;
+                if (target instanceof HTMLElement && target.closest("a")) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!mobileQuery.matches || !(event.target instanceof Node)) {
+                    return;
+                }
+
+                if (!header.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+
+            mobileQuery.addEventListener("change", () => {
+                if (!mobileQuery.matches) {
+                    closeMenu();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
