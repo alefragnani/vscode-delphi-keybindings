@@ -16,3 +16,11 @@ webpack.config.js
 **/.git
 **/.gitmodules
 .devcontainer/
+testworkspace/
+
+# agents
+AGENTS.md
+
+# gh-pages
+index.html
+styles.css
