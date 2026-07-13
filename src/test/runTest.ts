@@ -13,7 +13,7 @@ async function main() {
 		// Passed to --extensionTestsPath
 		const extensionTestsPath = path.resolve(__dirname, './suite/index');
 		const userDataDirBase = process.platform === 'darwin' ? '/tmp' : os.tmpdir();
-		const userDataDir = path.join(userDataDirBase, 'vscode-test-user-data');
+		const userDataDir = path.join(userDataDirBase, `vscode-test-user-data-${process.pid}`);
 
 		// Download VS Code, unzip it and run the integration test
 		await runTests({
