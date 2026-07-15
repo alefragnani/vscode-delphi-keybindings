@@ -22,5 +22,6 @@ testworkspace/
 AGENTS.md
 
 # gh-pages
-index.html
-styles.css
+docs/index.html
+docs/styles.css
+docs/images/icon.svg
