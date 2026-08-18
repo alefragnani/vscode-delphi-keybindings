@@ -1,7 +1,8 @@
 import * as path from 'path';
 import * as os from 'os';
+import { execSync } from 'child_process';
 
-import { runTests } from '@vscode/test-electron';
+import { downloadAndUnzipVSCode, runTests } from '@vscode/test-electron';
 
 async function main() {
 	try {
@@ -15,8 +16,29 @@ async function main() {
 		const userDataDirBase = process.platform === 'darwin' ? '/tmp' : os.tmpdir();
 		const userDataDir = path.join(userDataDirBase, `vscode-test-user-data-${process.pid}`);
 
-		// Download VS Code, unzip it and run the integration test
+		// Download VS Code first so we can remove macOS quarantine before launching
+		const vscodeExecutablePath = await downloadAndUnzipVSCode('stable');
+
+		// On macOS, remove the quarantine attribute set by Gatekeeper which would
+		// prevent spawning the downloaded Electron binary in CI environments
+		if (process.platform === 'darwin') {
+			// Walk up from the executable to find the .app bundle root
+			let appDir = vscodeExecutablePath;
+			while (appDir && !appDir.endsWith('.app')) {
+				appDir = path.dirname(appDir);
+			}
+			if (appDir && appDir.endsWith('.app')) {
+				try {
+					execSync(`xattr -dr com.apple.quarantine "${appDir}"`, { stdio: 'inherit' });
+				} catch {
+					// xattr may fail if the attribute is not present; ignore the error
+				}
+			}
+		}
+
+		// Run the integration tests using the pre-downloaded VS Code
 		await runTests({
+			vscodeExecutablePath,
 			extensionDevelopmentPath,
 			extensionTestsPath,
 			launchArgs: [
