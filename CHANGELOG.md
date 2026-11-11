@@ -1,3 +1,25 @@
+## [9.8.2] - 2026-11-11
+### Internal
+- Security Alert: fast-uri (dependabot [PR #118](https://github.com/alefragnani/vscode-delphi-keybindings/pull/118))
+- Security Alert: brace-expansion (dependabot [PR #117](https://github.com/alefragnani/vscode-delphi-keybindings/pull/117))
+- Security Alert: serialize-javascript (dependabot [PR #116](https://github.com/alefragnani/vscode-delphi-keybindings/pull/116))
+- Security Alert: minimatch, @typescript-eslint/eslint-plugin and @typescript-eslint/parser (dependabot [PR #115](https://github.com/alefragnani/vscode-delphi-keybindings/pull/115))
+- Security Alert: serialize-javascript, terser-webpack-plugin and mocha (dependabot [PR #114](https://github.com/alefragnani/vscode-delphi-keybindings/pull/114))
+- Security Alert: glob (dependabot [PR #113](https://github.com/alefragnani/vscode-delphi-keybindings/pull/113))
+- Security Alert: js-yaml (dependabot [PR #112](https://github.com/alefragnani/vscode-delphi-keybindings/pull/112))
+- Security Alert: brace-expansion (dependabot [PR #111](https://github.com/alefragnani/vscode-delphi-keybindings/pull/111))
+- Security Alert: browserslist (dependabot [PR #110](https://github.com/alefragnani/vscode-delphi-keybindings/pull/110))
+- Security Alert: fast-uri (dependabot [PR #109](https://github.com/alefragnani/vscode-delphi-keybindings/pull/109))
+- Security Alert: js-yaml (dependabot [PR #108](https://github.com/alefragnani/vscode-delphi-keybindings/pull/108))
+- Security Alert: fast-uri (dependabot [PR #107](https://github.com/alefragnani/vscode-delphi-keybindings/pull/107))
+- Security Alert: js-yaml (dependabot [PR #104](https://github.com/alefragnani/vscode-delphi-keybindings/pull/104))
+- Security Alert: fast-uri (dependabot [PR #103](https://github.com/alefragnani/vscode-delphi-keybindings/pull/103))
+- Security Alert: picomatch (dependabot [PR #96](https://github.com/alefragnani/vscode-delphi-keybindings/pull/96))
+- Security Alert: flatted (dependabot [PR #95](https://github.com/alefragnani/vscode-delphi-keybindings/pull/95))
+- Security Alert: minimatch, @typescript-eslint/eslint-plugin and @typescript-eslint/parser (dependabot [PR #92](https://github.com/alefragnani/vscode-delphi-keybindings/pull/92))
+- Security Alert: js-yaml (dependabot [PR #90](https://github.com/alefragnani/vscode-delphi-keybindings/pull/90))
+- Security Alert: serialize-javascript and mocha (dependabot [PR #85](https://github.com/alefragnani/vscode-delphi-keybindings/pull/85))
+
 ## [9.8.1] - 2025-02-03
 ### Internal
 - Security Alert: webpack (dependabot [PR #84](https://github.com/alefragnani/vscode-delphi-keybindings/pull/84))
